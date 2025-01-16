@@ -5,4 +5,60 @@
 body {
     margin: 0;
     font-family: "Lato", serif;
+    background-color: var(--color-white);
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 81px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+    white-space: nowrap;
+}
+
+.header__actions {
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.btn {
+    background-color: var(--color-green);
+    width: 180px;
+    height: 50px;
+    font-family: "Lato", serif;
+    color: var(--color-white);
+    border: 0;
+    outline: none;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.btn:hover,
+.btn:focus-visible {
+    outline: 2px solid var(--color-dark-green);
+    cursor: pointer;
+}
+
+.btn__sign-in {
+    background-color: transparent;
+    color: var(--color-black);
 }

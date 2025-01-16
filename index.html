@@ -11,11 +11,35 @@
     <link rel="icon" href="assets/favicon.png" type="image/png">
 </head>
 <body>
-    <!-- width="81" height="24" -->
-    <svg>
-        <use href="assets/sprites.svg#logo-icon"></use>
-    </svg>
+    <header class="header" aria-label="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <svg class="logo" aria-label="logo">
+                    <use href="assets/sprites.svg#logo-icon"></use>
+                </svg>
+                <nav class="header__nav" aria-label="navigation">
+                    <ul class="header__nav__list" aria-label="navigation list">
+                        <li class="header__nav__item">
+                            <a href="#" class="header__nav__link">Why Alivio</a>
+                        </li>
+                        <li class="header__nav__item">
+                            <a href="#" class="header__nav__link">Solutions</a>
+                        </li>
+                        <li class="header__nav__item">
+                            <a href="#" class="header__nav__link">Community</a>
+                        </li>
+                        <li class="header__nav__item">
+                            <a href="#" class="header__nav__link">Pricing</a>
+                        </li>
+                    </ul>
+                </nav>
 
-    test text
+                <header class="header__actions">
+                    <button type="button" class="btn btn__sign-in">Sign in</button>
+                    <button type="button" class="btn">Start trial</button>
+                </header>
+            </div>
+        </div>
+    </header>
 </body>
 </html>
