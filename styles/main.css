@@ -42,7 +42,7 @@
 
 @media (max-width: 480px) {
     .hero__content {
-        max-width: 430px;
+        max-width: 420px;
     }
     .hero {
         background: linear-gradient(180deg, rgba(245, 246, 252, 0.52), rgba(255, 176, 139, 0.28)), 
