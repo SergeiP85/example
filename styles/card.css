@@ -52,3 +52,21 @@
     content: "03";
     left: -130px;
 }
+
+@media (max-width:480px) {
+    .card__title {
+        font-size: 25px;
+    }
+    .card__title::before {
+        left: -90px;
+    }
+    .card__description {
+        font-size: 16px;
+    }
+    /* .card__title.card__title-right {
+        align-self: center;
+    } */
+    .card {
+        height: 700px;
+    } 
+} 

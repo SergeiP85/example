@@ -3,11 +3,11 @@
     padding: 170px 0 60px 0;
 }
 
-.about__subtitle {
+/* .about__subtitle { 
     font-size: 24px;
     font-weight: 700;
     color: var(--color-black);
-}
+} */
 
 .about__content {
     display: flex;
@@ -20,6 +20,17 @@
     font-size: 50px;
     font-weight: 700;
     max-width: 500px;
+    position: relative;
+}
+
+.about__title::before {
+    content: "How it works";
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--color-black);
+    position: absolute;
+    top: -40px;
+    left: 0;
 }
 
 .about__description {
@@ -42,6 +53,16 @@
 }
 
 @media (max-width:1250px) {
+    /* .about__subtitle {
+        max-width: 600px;
+        text-align: center;
+    } */
+    .about__content {
+        align-items: center;
+        justify-content: start;
+        flex-direction: column;
+        gap: 20px;
+    }
     .about__cards {
         align-items: center;
         justify-content: start;
@@ -49,5 +70,17 @@
     }
 .about__cards .card:nth-child(2) {
     margin: 0 0 0 0;
+    }
+}
+
+@media (max-width:576px) {
+    .about__content {
+        padding: 0 15px;
+    }
+    .about__title {
+        font-size: 35px;
+    }
+    .about__description {
+        font-size: 16px;
     }
 }
